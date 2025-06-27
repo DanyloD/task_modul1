@@ -17,7 +17,7 @@ scaler = MinMaxScaler()
 df[features] = scaler.fit_transform(df[features])
 
 X = df[features]
-y = df['fruit_label']  # або 'fruit_name' якщо хочете текстову класифікацію
+y = df['fruit_label']  # або 'fruit_name'
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
